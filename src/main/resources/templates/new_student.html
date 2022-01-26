@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher managment page</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+ </head>
+ <body>
+     <div class="container">
+         <h1>Student managment system</h1>
+         <hr>
+         <h2>save students</h2>
+
+         <form action="#" th:action="@/saveStudent" th:object="${Student}" method="post">
+             <input type="text" th:field="*/firstName" placeholder="enter first name" class="form-control mb-4 col-4">
+             <input type="text" th:field="*/lastName" placeholder="enter last name" class="form-control mb-4 col-4">
+            <button type="submit" class="btn btn-info col-2"> save student</button>
+         </form>
+
+     </div>
+     <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+ </body>
+ </html>
