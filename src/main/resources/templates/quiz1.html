@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>WEB DEVELOPMENT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="/js/quiz.js"></script>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="quiz.css">
+  </head>
+  <body>
+   <div class="content"> 
+      <div class="box">
+      <h1>WELLCOME TO WEB DESIN AND DEVELOPMENT EXAMINATION</h1><br>
+      <P>CHOOSE THE BEST ANSWER.......good luck</P>
+      <hr>
+    <form name="quiz" value="quiz" class="q2">
+        <div>
+            <p>1. Web page editors works on a ____ principle.</p>
+            <p><input type="radio" name="question1" value="op1">A.WWW</p>
+            <p><input type="radio" name="question1" value="op2">B.HTML</p>
+            <p><input type="radio" name="question1" value="op3">C.WYSIWYG</p>
+            <p><input type="radio" name="question1" value="op4">D.WYGWYSI</p>
+        </div>
+        <div>
+           <p>2.What is the name of the location address of the hypertext documents?</p>
+           <p><input type="radio" name="question2" value="op1">A.Uniform Resource Locator</p>
+           <p><input type="radio" name="question2" value="op2">B. Web serve</p>
+           <p><input type="radio" name="question2" value="op3">C.File</p>
+           <p><input type="radio" name="question2" value="op4">D.Web address</p>
+        </div>
+        <div>
+            <p>3. Which program is used by web clients to view the web pages?</p>
+            <p><input type="radio" name="question3" value="op1">A.Web browse</p>
+            <p><input type="radio" name="question3" value="op2">B.Web server</p>
+            <p><input type="radio" name="question3" value="op3">C. protocol</p>
+            <p><input type="radio" name="question3" value="op4">D.Search engine</p>
+         </div>
+         <div>
+            <p>4.How many colour names are used by the browsers?</p>
+            <p><input type="radio" name="question4" value="op1">A.8</p>
+            <p><input type="radio" name="question4" value="op2">B.10</p>
+            <p><input type="radio" name="question4" value="op3">C.12</p>
+            <p><input type="radio" name="question4" value="op4">D.16</p>
+         </div>
+         <div>
+            <p>5.What are shared on the Internet and are called as Web pages?</p>
+            <p><input type="radio" name="question5" value="op1">A.Programs</p>
+            <p><input type="radio" name="question5" value="op2">B.Cables</p>
+            <p><input type="radio" name="question5" value="op3">C.Hypertext documents</p>
+            <p><input type="radio" name="question5" value="op4">D.None</p>
+         </div>
+    <input type="button" name="" value="Submit" onclick="check()"><br>
+   
+      <p>Do you want to go back to exams list? <a th:href="@{/examOption}">go back to exam list</a></p>
+
+    </form>
+    <p id="result"></p></div>
+   </div>
+  
+  </body>
+</html>

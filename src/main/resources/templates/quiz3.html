@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>DBMS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="/js/quiz.js"></script>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="quiz.css">
+  </head>
+  <body>
+   <div class="content"> 
+      <div class="box">
+      <h1>WELLCOME TO DBMS MCQ EXAMINATION</h1><br>
+      <P>CHOOSE THE BEST ANSWER.......good luck</P>
+      <hr>
+    <form name="quiz" value="quiz" class="q2">
+        <div>
+            <p>1) Which of the following is generally used for performing tasks like creating the structure of the relations, deleting relation?</p>
+            <p><input type="radio" name="question1" value="op1">A.DML(Data Manipulation Language</p>
+            <p><input type="radio" name="question1" value="op2">B.Query</p>
+            <p><input type="radio" name="question1" value="op3">C.Relational Schema</p>
+            <p><input type="radio" name="question1" value="op4">D.DDL(Data Definition Language)</p>
+        </div>
+        <div>
+         <p>2) Which one of the following given statements possibly contains the error?</p>
+           <p><input type="radio" name="question2" value="op1">A.select * from emp where empid = 10003;</p>
+           <p><input type="radio" name="question2" value="op2">B.select empid from emp where empid = 10006;</p>
+           <p><input type="radio" name="question2" value="op3">C.select empid from emp;</p>
+           <p><input type="radio" name="question2" value="op4">D.select empid where empid = 1009 and Lastname = 'GELLER';</p>         
+        </div>
+        <div>
+            <p>3) What do you mean by one to many relationships?</p>
+            <p><input type="radio" name="question3" value="op1">A.One class may have many teachers</p>
+            <p><input type="radio" name="question3" value="op2">B.One teacher can have many classes</p>
+            <p><input type="radio" name="question3" value="op3">C.Many classes may have many teachers </p>
+            <p><input type="radio" name="question3" value="op4">D.Many teachers may have many classes</p>
+         </div>
+         <div>
+            <p>4) A Database Management System is a type of _________software.</p>
+            <p><input type="radio" name="question4" value="op1">A.It is a type of system software</p>
+            <p><input type="radio" name="question4" value="op2">B.It is a kind of application software</p>
+            <p><input type="radio" name="question4" value="op3">C.It is a kind of general software</p>
+            <p><input type="radio" name="question4" value="op4">D.Both A and C</p>
+         </div>
+         <div>
+            <p>5) The term "FAT" is stands for____</p>
+            <p><input type="radio" name="question5" value="op1">A.File Allocation Tree</p>
+            <p><input type="radio" name="question5" value="op2">B.File Allocation Table</p>
+            <p><input type="radio" name="question5" value="op3">C.File Allocation Graph</p>
+            <p><input type="radio" name="question5" value="op4">D.All of the above</p>
+         </div>
+    <input type="button" name="" value="Submit" onclick="check3()"><br>
+   
+      <p>Do you want to go back to exams list? <a th:href="@{/examOption}">go back to exam list</a></p>
+
+    </form>
+    <p id="result"></p></div>
+   </div>
+  
+  </body>
+</html>
