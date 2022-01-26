@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>QUIZ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="/js/quiz.js"></script>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="quiz.css">
+  </head>
+  <body>
+   <div class="content"> 
+      <div class="box">
+      <h1>WELLCOME JAVA EXAMINATION</h1><br>
+      <P>CHOOSE THE BEST ANSWER.......good luck</P>
+      <hr>
+    <form name="quiz" value="quiz" class="q2">
+        <div>
+            <p>1) Which of the following option leads to the portability and security of Java?</p>
+            <p><input type="radio" name="question1" value="op1">A.Bytecode is executed by JVM</p>
+            <p><input type="radio" name="question1" value="op2">B.The applet makes the Java code secure and portable</p>
+            <p><input type="radio" name="question1" value="op3">C.Use of exception handling</p>
+            <p><input type="radio" name="question1" value="op4">D.Dynamic binding between objects</p>
+        </div>
+        <div>
+           <p>2) Which of the following is not a Java features?</p>
+           <p><input type="radio" name="question2" value="op1">A.Dynamic</p>
+           <p><input type="radio" name="question2" value="op2">B.Architecture Neutral</p>
+           <p><input type="radio" name="question2" value="op3">C.Use of pointers</p>
+           <p><input type="radio" name="question2" value="op4">D.Object-oriented</p>
+        </div>
+        <div>
+            <p>3) The \u0021 article referred to as a</p>
+            <p><input type="radio" name="question3" value="op1">A.Unicode escape sequence</p>
+            <p><input type="radio" name="question3" value="op2">B.Octal escape</p>
+            <p><input type="radio" name="question3" value="op3">C.Hexadecimal </p>
+            <p><input type="radio" name="question3" value="op4">D.Line feed</p>
+         </div>
+         <div>
+            <p>4)_____ is used to find and fix bugs in the Java programs.</p>
+            <p><input type="radio" name="question4" value="op1">A.JVM</p>
+            <p><input type="radio" name="question4" value="op2">B.JRE</p>
+            <p><input type="radio" name="question4" value="op3">C.JDK</p>
+            <p><input type="radio" name="question4" value="op4">D.JDB</p>
+         </div>
+         <div>
+            <p>5) What is the return type of the hashCode() method in the Object class?</p>
+            <p><input type="radio" name="question5" value="op1">A.Object</p>
+            <p><input type="radio" name="question5" value="op2">B.int</p>
+            <p><input type="radio" name="question5" value="op3">C.long</p>
+            <p><input type="radio" name="question5" value="op4">D.void</p>
+         </div>
+    <input type="button" name="" value="Submit" onclick="check1()"><br>
+   
+      <p>Do you want to go back to exams list? <a th:href="@{/examOption}">go back to exam list</a></p>
+
+    </form>
+    <p id="result"></p></div>
+   </div>
+  
+  </body>
+</html>

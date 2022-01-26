@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RegistrationLoginSpringBootSecurityThymeleafApplication<registration-login-spring-boot-security-thymeleaf>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "net.javaguides.springboot.RegistrationLoginSpringBootSecurityThymeleafApplication",
+            "projectName": "registration-login-spring-boot-security-thymeleaf",
+            "args": ""
+        }
+    ]
+}
