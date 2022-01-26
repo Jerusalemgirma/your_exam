@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher managment page</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+ </head>
+ <body>
+     <div align="center">
+         <h1>student list</h1>
+         <a th:href="@{/showNewStudentForm}" class="btn btn-primary btn-sm mb-3">Add student</a>
+         <table>
+             <thead>
+                 <tr>
+                     <th>
+                         Student first name
+                     </th>
+                     <th>
+                        Student last name
+                    </th>
+                    <th>actions</th>
+
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr th:each="teacher:${ListTeachers}">
+                     <td th:text="${teacher.firstName}"></td>
+                     <td th:text="${teacher.firstName}"></td>
+                     <td> <a th:href="@{/showFormForUpdate/{id}(id=${student.id})}"
+                         class="btn btn-primary">Update</a>
+                         <a th:href
+                         
+                         ="@{/deleteStudent/{id}(id=${student.id})}"
+                         class="btn btn-primary">Delete</a>
+                        </td>
+
+                 </tr>
+             </tbody>
+         </table>
+
+     </div>
+     <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+ </body>
